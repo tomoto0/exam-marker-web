@@ -165,3 +165,9 @@ The application is built with:
 - Next.js for the frontend and API routes
 - Tailwind CSS for styling
 - Python backend for PDF processing and Gemini API integration
+
+## Relating paper
+
+ChatGPT: Is It Reliable as an Automated Writing Evaluation Tool?
+
+https://doi.org/10.18039/ajesi.1463503

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Economics Exam Auto-Grader is a web application that automates the grading of economics exams using Google's Gemini AI. It analyzes student submissions, evaluates their answers against model solutions, and provides detailed feedback based on predefined marking criteria.
+The Economics Exam Auto-Grader is a web application that automates the grading of economics exams using Google's Gemini AI (gemini-2.5-flash-preview-05-20). It analyzes student submissions, evaluates their answers against model solutions, and provides detailed feedback based on predefined marking criteria.
 
 ## Features
 
@@ -17,7 +17,7 @@ The Economics Exam Auto-Grader is a web application that automates the grading o
 ### Prerequisites
 
 - A modern web browser (Chrome, Firefox, Safari, Edge)
-- Google Gemini API key (if deploying your own instance)
+- Google Gemini API key for gemini-2.5-flash-preview-05-20 model (if deploying your own instance)
 - Student exam submissions in PDF format
 
 ### Workflow
@@ -127,9 +127,10 @@ To deploy the application to your own environment:
    npm install
    ```
 
-3. Create a `.env` file with your Gemini API key:
+3. Create a `.env` file with your Gemini API key for the gemini-2.5-flash-preview-05-20 model:
    ```
    GEMINI_API_KEY=your_api_key_here
+   GEMINI_MODEL=gemini-2.5-flash-preview-05-20
    ```
 
 4. Build the application:
@@ -150,21 +151,21 @@ Alternatively, you can deploy to any hosting service that supports Next.js appli
 
 - **File Upload Errors**: Ensure your files are in the correct format and not too large
 - **Processing Errors**: Check that your PDF files are properly formatted and readable
-- **API Errors**: Verify that your Gemini API key is valid and has sufficient quota
+- **API Errors**: Verify that your Gemini API key is valid and has sufficient quota for the gemini-2.5-flash-preview-05-20 model
 
 ### Getting Help
 
 If you encounter any issues, please:
 1. Check the console for error messages
 2. Verify your file formats match the requirements
-3. Ensure your Gemini API key is valid and has sufficient quota
+3. Ensure your Gemini API key is valid and has sufficient quota for the gemini-2.5-flash-preview-05-20 model
 
 ## Technical Details
 
 The application is built with:
 - Next.js for the frontend and API routes
 - Tailwind CSS for styling
-- Python backend for PDF processing and Gemini API integration
+- Python backend for PDF processing and Gemini API integration (gemini-2.5-flash-preview-05-20)
 
 ## Relating paper
 
